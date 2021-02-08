@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Character from './components/Character';
 import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -29,7 +30,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Star Wars Characters</h1>
       {characterInfo.map(detail => {
-        console.log(detail.url)
+        // console.log(detail.url)
         return <Character detail={detail} key={detail.url}/>
       }
        
